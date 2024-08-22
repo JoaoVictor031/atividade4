@@ -17,7 +17,7 @@ public class Elefante extends AnimalAB{
 
     @Override
     public void dormir() {
-        horasDormidas += 25;
+        horasDormidas += 9;
         System.out.println("O total de horas dormidas foi " +horasDormidas+ " hr");
     }
 }

@@ -5,7 +5,7 @@ public class Cachorro extends AnimalAB{
 
     @Override
     public void comer() {
-        comidaIngerida += 15;
+        comidaIngerida += 2;
         System.out.println("A quantidade de comida ingerida foi " + comidaIngerida + " kg");
     }
 
@@ -17,7 +17,7 @@ public class Cachorro extends AnimalAB{
 
     @Override
     public void dormir() {
-        horasDormidas += 27;
+        horasDormidas += 9;
         System.out.println("O total de horas dormidas foi " +horasDormidas+ " hr");
     }
 }
