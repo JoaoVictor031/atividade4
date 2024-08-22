@@ -5,19 +5,19 @@ public class Leao extends AnimalAB{
 
     @Override
     public void comer() {
-        comidaIngerida += 40;
+        comidaIngerida += 50;
         System.out.println("A quantidade de comida ingerida foi " + comidaIngerida + " kg");
     }
 
     @Override
     public void moverse() {
-        distanciaPercorrida += 15;
+        distanciaPercorrida += 7;
         System.out.println("A distância percorrida foi " + distanciaPercorrida + " kh");
     }
 
     @Override
     public void dormir() {
-        horasDormidas += 25;
+        horasDormidas += 6;
         System.out.println("O total de horas dormidas foi " +horasDormidas+ " hr");
     }
 }
