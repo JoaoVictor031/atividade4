@@ -1,6 +1,5 @@
 public interface AnimalIF {
-    public void comer();
-    public void moverse();
-    public void dormir();
-
+    void comer();
+    void moverse();
+    void dormir();
 }

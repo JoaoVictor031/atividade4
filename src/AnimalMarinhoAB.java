@@ -1,9 +1,13 @@
-public abstract class AnimalMarinhoAB implements AnimalIF{
+public abstract class AnimalMarinhoAB extends AnimalAB {
+
+    public AnimalMarinhoAB(String nome, String tipoAnimal, int idade, String habitat, double altura, double peso) {
+        super(nome, tipoAnimal, idade, habitat, altura, peso);
+    }
+
     @Override
     public abstract void comer();
     @Override
-    public abstract void moverse();
+    public abstract void moverse(); // Método nadar
     @Override
     public abstract void dormir();
-
 }

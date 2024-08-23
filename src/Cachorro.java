@@ -1,23 +1,31 @@
-public class Cachorro extends AnimalAB{
-    private int comidaIngerida;
-    private int distanciaPercorrida;
-    private int horasDormidas;
+public class Cachorro extends AnimalTerrestreAB {
+
+    private double comidaConsumida;
+    private double distanciaPercorrida;
+    private double horasDormidas;
+
+    public Cachorro(String nome, int idade, double altura, double peso, int quantidadePatas) {
+        super(nome, "Cachorro", idade, "Doméstico", altura, peso, quantidadePatas);
+        this.comidaConsumida = 0;
+        this.distanciaPercorrida = 0.0;
+        this.horasDormidas = 0;
+    }
 
     @Override
     public void comer() {
-        comidaIngerida += 2;
-        System.out.println("A quantidade de comida ingerida foi " + comidaIngerida + " kg");
+        comidaConsumida += 2.0;
+        System.out.println("O " + nome + " comeu " + comidaConsumida + " KG");
     }
 
     @Override
     public void moverse() {
-        distanciaPercorrida += 20;
-        System.out.println("A distância percorrida foi " + distanciaPercorrida + " kh");
+        distanciaPercorrida += 0.9;
+        System.out.println("O " + nome + " andou por " + distanciaPercorrida + " KM");
     }
 
     @Override
     public void dormir() {
-        horasDormidas += 9;
-        System.out.println("O total de horas dormidas foi " +horasDormidas+ " hr");
+        horasDormidas += 7.3;
+        System.out.println("O " + nome + " dormiu por " + horasDormidas + " horas");
     }
 }

@@ -1,23 +1,31 @@
-public class Leao extends AnimalAB{
-    private int comidaIngerida;
-    private int distanciaPercorrida;
-    private int horasDormidas;
+public class Leao extends AnimalTerrestreAB {
+
+    private double comidaConsumida;
+    private double distanciaPercorrida;
+    private double horasDormidas;
+
+    public Leao(String nome, int idade, double altura, double peso, int quantidadePatas) {
+        super(nome, "Elefante", idade, "Selva", altura, peso, quantidadePatas);
+        this.comidaConsumida = 0;
+        this.distanciaPercorrida = 0.0;
+        this.horasDormidas = 0;
+    }
 
     @Override
     public void comer() {
-        comidaIngerida += 50;
-        System.out.println("A quantidade de comida ingerida foi " + comidaIngerida + " kg");
+        comidaConsumida += 20.4;
+        System.out.println("O " + nome + " comeu " + comidaConsumida + " KG de carne");
     }
 
     @Override
     public void moverse() {
-        distanciaPercorrida += 7;
-        System.out.println("A distância percorrida foi " + distanciaPercorrida + " kh");
+        distanciaPercorrida += 6.8;
+        System.out.println("O " + nome + " andou por " + distanciaPercorrida + " KM");
     }
 
     @Override
     public void dormir() {
-        horasDormidas += 6;
-        System.out.println("O total de horas dormidas foi " +horasDormidas+ " hr");
+        horasDormidas += 8.0;
+        System.out.println("O " + nome + " dormiu por " + horasDormidas + " horas");
     }
 }
