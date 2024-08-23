@@ -15,7 +15,6 @@ public abstract class AnimalAB implements AnimalIF {
         this.peso = peso;
     }
 
-    // Métodos abstratos que serão implementados nas subclasses
     public abstract void comer();
     public abstract void moverse();
     public abstract void dormir();
